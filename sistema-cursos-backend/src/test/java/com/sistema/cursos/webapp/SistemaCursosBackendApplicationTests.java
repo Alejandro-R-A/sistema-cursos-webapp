@@ -1,0 +1,13 @@
+package com.sistema.cursos.webapp;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SistemaCursosBackendApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

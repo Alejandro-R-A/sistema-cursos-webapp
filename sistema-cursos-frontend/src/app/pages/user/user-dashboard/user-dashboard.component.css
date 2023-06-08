@@ -1,0 +1,30 @@
+.image-bkg {
+    background-image: url("../../../../assets/pagina-user.jpg");
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.center-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4,h1, h3{
+    color:  #2bbfa0;
+}
+p, h2 {
+    color:  #ffffff
+}
+
+.my-color {
+    background-color: #2bbfa0;;
+    color: white;
+}
+
+.bkg {
+    background-color:  #163442 ;
+}
+.bkg-second {
+    background-color: #2bbfa0 ;
+}

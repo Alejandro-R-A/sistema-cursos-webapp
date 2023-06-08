@@ -1,0 +1,122 @@
+<div class="image-bkg">
+  <mat-grid-list cols="1" rowHeight="500px">
+    <div class="pt20">
+      <h1>Cursos Gratis</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, itaque.
+      </p>
+      <button mat-raised-button class="my-color">Ya estas Logeado</button>
+    </div>
+  </mat-grid-list>
+</div>
+<div>
+  <br />
+  <h1 class="text-center">Cursos disponibles</h1>
+</div>
+<div class="container">
+  <mat-grid-list *ngIf="cursos.length > 0" cols="3" rowHeight="500px">
+    <mat-grid-tile *ngFor="let curso of cursos">
+      <div class="container">
+        <mat-card class="example-card bkg">
+          <mat-card-header>
+            <mat-card-title
+              ><h3>{{ curso.nombreCurso }}</h3></mat-card-title
+            >
+            <mat-card-subtitle
+              ><p>
+                ({{ curso.fechaInicio }}) - ({{ curso.fechaFin }})
+              </p></mat-card-subtitle
+            >
+          </mat-card-header>
+          <div class="center-image">
+            <img
+              mat-card-image
+              src="../../../../assets/cursos.png"
+              alt="cursos"
+              width="250"
+              height="250"
+            />
+          </div>
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct
+              spitz breeds of dog from Japan. A small, agile dog that copes very
+              well with mountainous terrain, the Shiba Inu was originally bred
+              for hunting.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-grid-tile>
+    <div *ngIf="cursos.length === 0" class="mt-3">
+      <h4>No hay cursos que mostrar</h4>
+    </div>
+  </mat-grid-list>
+
+  <div>
+    <h1 class="text-center">Categorias</h1>
+  </div>
+  <mat-grid-list *ngIf="cursos.length > 0" cols="4">
+    <mat-grid-tile *ngFor="let curso of cursos">
+      <div class="container pt20 text-center">
+        <mat-card class="bkg-second">
+          <div class="center-image pt20">
+            <img src="../../../../assets/web.png" width="100" height="100" />
+          </div>
+          <h2>{{ curso.categoria }}</h2>
+        </mat-card>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div *ngIf="cursos.length === 0" class="mt-3">
+    <h4>No hay categorias que mostrar</h4>
+  </div>
+  <div>
+    <h1 class="text-center">Nuestros profesionales</h1>
+  </div>
+
+  <mat-grid-list *ngIf="cursos.length > 0" cols="3" rowHeight="300px">
+    <mat-grid-tile *ngFor="let curso of cursos">
+      <div class="container">
+        <mat-card class="bkg">
+          <div class="center-image pt20">
+            <img
+              src="../../../../assets/perfil.png"
+              alt="perfil"
+              width="100"
+              height="100"
+            />
+          </div>
+          <div class="text-center">
+            <h4>{{ curso.nombreProfesor }}</h4>
+          </div>
+        </mat-card>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div *ngIf="cursos.length === 0" class="mt-3">
+    <h4>No hay contenido que mostrar</h4>
+  </div>
+</div>
+<mat-grid-list class="bkg" cols="4" rowHeight="200px">
+  <mat-grid-tile>
+    <div class="container">
+      <h4>Contactos</h4>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="container">
+      <h4>Acerca de nosotros</h4>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="container">
+      <h4>Empresas aliadas</h4>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="container">
+      <h4>Ubicación</h4>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

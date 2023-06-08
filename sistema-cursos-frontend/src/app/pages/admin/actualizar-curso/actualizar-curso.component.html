@@ -1,0 +1,70 @@
+<div class="container">
+    <mat-card>
+      <br />
+      <h1 class="text-center">Actualizar curso</h1>
+      <form class="container" *ngIf = "curso" (submit) = "actualizarDatos()">
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Nombre del curso</mat-label>
+          <input
+          [(ngModel)] = "curso.nombreCurso"
+            name="nombreCurso"
+            required
+            type="text"
+            matInput
+            placeholder="Digite el nombre del curso"
+          />
+          <mat-hint>El nombre del curso debe ser válido</mat-hint>
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Fecha de Inicio</mat-label>
+          <input 
+          [(ngModel)] = "curso.fechaInicio"
+          name="fechaInicio" required type="date" matInput />
+        </mat-form-field>
+        <mat-form-field class="full-width" appearance="outline">
+          <mat-label>Fecha Fin</mat-label>
+          <input 
+          [(ngModel)] = "curso.fechaFin"
+          name="fechaFin" required type="date" matInput />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Categoria</mat-label>
+          <mat-select 
+          [(ngModel)] = "curso.categoria"
+          name="categoria">
+            <mat-option value="Development"> Development </mat-option>
+            <mat-option value="QA"> QA </mat-option>
+            <mat-option value="IA"> IA </mat-option>
+          </mat-select>
+        </mat-form-field>
+        {{ "" }}
+        <mat-form-field>
+          <mat-label>Profesor</mat-label>
+          <mat-select 
+          [(ngModel)] = "curso.nombreProfesor"
+          name="nombreProfesor">
+            <mat-option value="Fowler"> Fowler </mat-option>
+            <mat-option value="David"> David </mat-option>
+            <mat-option value="Maria"> Maria </mat-option>
+          </mat-select>
+        </mat-form-field>
+  
+        <br /><br />
+        <div class="container text-center">
+          <button type="submit" mat-raised-button color="primary">
+            Registrar
+          </button>
+          <button
+            type="reset"
+            class="btn-limpiar"
+            mat-raised-button
+            color="accent"
+          >
+            Limpiar
+          </button>
+        </div>
+        <br /><br />
+      </form>
+    </mat-card>
+  </div>
+  
