@@ -3,7 +3,7 @@ Proyecto Full-stack de un sistema web de cursos con dos roles
 
 ## Tecnologias utilizadas:
 
-1. Java y SptrinBoot
+1. Java y SpringBoot
 2. JWT (Jason Web Token)
 3. PostgreSQL
 4. Angular (Angular Material y Bootstrap)
