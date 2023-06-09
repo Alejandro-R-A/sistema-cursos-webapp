@@ -21,16 +21,21 @@ Tambien cuenta con un apartado de registro de usuarios donde se puede crear un u
 ## Imagenes del sistema (interfaces básicas)
 
 Formulario de registro
+
 ![Registro de usuarios](/images/registro.png)
 
 Formulario de inicio de sesión
+
 ![login](/images/login.png)
 
 Interfaz de usuario del administrador
+
 ![Interfaz del administrador](/images/admin.png)
 
 Interfaz curso agregado
+
 ![Agregar nuevo curso](/images/add-curso.png)
 
 Interfaz de usuario del usuario normal
+
 ![Interfaz de usuario normal](/images/user-normal.png)
